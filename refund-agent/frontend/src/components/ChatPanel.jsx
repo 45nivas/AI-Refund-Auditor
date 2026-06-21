@@ -181,14 +181,19 @@ export default function ChatPanel({
         <button
           type="button"
           onClick={isListening ? stopListening : startListening}
-          className={`p-3 rounded-lg border transition-all ${
+          className={`p-3 rounded-lg border transition-all relative ${
             isListening
-              ? "bg-red-500/10 border-red-500 text-red-500"
-              : "bg-[var(--background)] border-[var(--border)] text-[var(--text-muted)] hover:text-[var(--text)]"
+              ? "bg-red-500/20 border-red-500 text-red-500 scale-105 shadow-lg shadow-red-500/20 animate-[pulse_1.5s_infinite]"
+              : "bg-[var(--background)] border-[var(--border)] text-[var(--text-muted)] hover:text-[var(--text)] hover:scale-105 active:scale-95"
           }`}
           title={isListening ? "Stop Voice Input" : "Speak Message"}
         >
-          {isListening ? <MicOff size={18} /> : <Mic size={18} />}
+          {isListening && (
+            <span className="absolute -inset-px rounded-lg bg-red-500/20 animate-ping opacity-75"></span>
+          )}
+          <span className="relative z-10 flex items-center justify-center">
+            {isListening ? <MicOff size={18} /> : <Mic size={18} />}
+          </span>
         </button>
 
         {/* Text Input */}
