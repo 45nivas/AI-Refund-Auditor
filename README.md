@@ -1,5 +1,9 @@
 # AI Refund Auditor
 
+## About
+* **Description**: AI Customer Support Agent — LangGraph + FastAPI + React + Voice Pipeline for e-commerce refund processing
+* **Topics**: langgraph, fastapi, react, python, ai-agent, llm, websocket, elevenlabs, sqlite
+
 An advanced, production-quality AI Customer Support Agent designed to process or deny e-commerce refund requests. It automatically audits customer profile data against a strict company policy document using LangGraph, writes decisions to an admin ledger, streams real-time reasoning logs via WebSockets, and offers voice integration via speech-to-text (STT) and text-to-speech (TTS).
 
 ---
