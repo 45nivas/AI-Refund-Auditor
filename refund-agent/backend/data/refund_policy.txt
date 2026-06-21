@@ -1,0 +1,27 @@
+# E-Commerce E-Store Refund Policy
+
+1. REFUND WINDOW
+Refund requests must be made within 30 days from the delivery date. Any request submitted more than 30 days after delivery will be denied.
+
+2. ABUSE PREVENTION
+Each customer is allowed a maximum of 3 refund requests in their account lifetime. Customers with 3 or more previous refunds will be denied.
+
+3. PAYMENT METHOD CONSTRAINTS
+For Cash on Delivery (COD) orders, a physical return must be initiated and the return status must be "returned" or "initiated" before any refund can be processed. COD refunds cannot be approved if the return has not been shipped back.
+
+4. TRANSACTION VALUE LIMITS
+Any refund request for an order with a total amount greater than ₹10,000 cannot be processed automatically. These requests must be marked as ESCALATED and routed to a human manager for manual approval.
+
+5. DELIVERY STATUS
+Orders that are in transit or not yet delivered are not eligible for refunds. The delivery status must be "delivered" to request a standard refund.
+
+6. DIGITAL PRODUCTS
+All purchases of digital products (such as software licenses, SaaS subscriptions, and digital downloads) are final and strictly non-refundable.
+
+7. DAMAGED or DEFECTIVE ITEMS
+If an item is delivered damaged or defective, the customer is eligible for:
+a) A partial refund of 50% of the purchase amount if the customer chooses to keep the product.
+b) A full refund of 100% of the purchase amount if the customer returns the product.
+
+8. CANCELLATIONS
+For orders cancelled before shipment (delivery status "not_shipped" and order status "cancelled"), a full refund will be approved automatically without questions.
