@@ -169,17 +169,17 @@ export default function App() {
             <h1 className="text-md font-bold tracking-tight text-[var(--text)]">Refund Auditor</h1>
             <p className="text-[10px] text-[var(--text-muted)] font-medium">Production AI Agent Operations Dashboard</p>
           </div>
-        </div>
-
-        <div className="flex items-center gap-3.5">
           {/* Light/Dark Toggle */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg border border-[var(--border)] bg-[var(--card)] text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--background)] transition-all"
+            className="p-2 rounded-lg border border-[var(--border)] bg-[var(--card)] text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--background)] transition-all ml-2"
             title={theme === "dark" ? "Switch to Light Theme" : "Switch to Dark Theme"}
           >
             {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
           </button>
+        </div>
+
+        <div className="flex items-center gap-3.5">
           {isConnected ? (
             <div className="flex items-center gap-1.5 text-xs text-green-500 bg-green-500/10 border border-green-500/25 px-2.5 py-1 rounded-full font-mono font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
