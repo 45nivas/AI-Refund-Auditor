@@ -9,6 +9,12 @@ export function useVoice(onTranscript) {
   const recognitionRef = useRef(null);
   const audioContextRef = useRef(null);
   const audioSourceRef = useRef(null);
+  const onTranscriptRef = useRef(onTranscript);
+
+  // Sync the latest onTranscript callback ref
+  useEffect(() => {
+    onTranscriptRef.current = onTranscript;
+  }, [onTranscript]);
 
   // Initialize Speech Recognition
   useEffect(() => {
@@ -27,8 +33,8 @@ export function useVoice(onTranscript) {
       rec.onresult = (event) => {
         const transcript = event.results[0][0].transcript;
         console.log("Speech-To-Text result:", transcript);
-        if (onTranscript) {
-          onTranscript(transcript);
+        if (onTranscriptRef.current) {
+          onTranscriptRef.current(transcript);
         }
       };
 
@@ -53,7 +59,7 @@ export function useVoice(onTranscript) {
         }
       }
     };
-  }, [onTranscript]);
+  }, []);
 
   const startListening = () => {
     if (recognitionRef.current) {
